@@ -8,7 +8,7 @@ LEARNED_FILE = "learned.txt"
 FAVORITES_FILE = "favorites.txt"
 
 # ==================== 初始化 ====================
-st.set_page_config(page_title="智能英语默写系统", page_icon="📘", layout="centered")
+st.set_page_config(page_title="智能英语默写系统——程嘉明", page_icon="📘", layout="centered")
 
 # ===== 检查是否存在单词文件 =====
 if not os.path.exists(WORDS_FILE):
