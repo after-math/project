@@ -1,7 +1,320 @@
-soldier,n. 士兵,The soldier stood guard at the entrance.,这名士兵在入口处站岗。
-hunt,v. 搜寻/狩猎,We need to hunt for more evidence.,我们需要搜寻更多证据。
-high-rise,n. 高层建筑,That high-rise blocks our ocean view.,那栋高楼挡住了我们的海景。
-staff,n. 全体职员,The entire staff attended the meeting.,全体职员都参加了会议。
-sandy,adj. 多沙的,The children played on the sandy shore.,孩子们在多沙的海岸上玩耍。
-base,n. 基地/基础,The company's base is in Shanghai.,公司的基地位于上海。
-ceremony,n. 典礼/仪式,The award ceremony starts at noon.,颁奖典礼中午开始。
+soldier,士兵 (n.),The soldier stood guard all night.,这名士兵整夜站岗。
+hunt,狩猎 (v.),We plan to hunt for deer this weekend.,我们计划周末去猎鹿。
+high-rise,高层建筑 (n.),She lives in a high-rise downtown.,她住在市中心的高层建筑里。
+staff,员工 (n.),The hotel staff were exceptionally helpful.,酒店员工格外乐于助人。
+sandy,沙质的 (adj.),The kids played on the sandy beach.,孩子们在沙质海滩上玩耍。
+base,基地 (n.),The military base is heavily guarded.,这个军事基地戒备森严。
+ceremony,仪式 (n.),The graduation ceremony was moving.,毕业典礼令人感动。
+bullet,子弹 (n.),A bullet whizzed past his ear.,一颗子弹从他耳边呼啸而过。
+fair,公平的 (adj.),That's not a fair way to decide.,那不是公平的决定方式。
+responsibility,责任 (n.),Taking responsibility is part of growing up.,承担责任是成长的一部分。
+basket,篮子 (n.),She carried fruits in a woven basket.,她用编织篮子装水果。
+flee,逃跑 (v.),They had to flee the burning building.,他们不得不逃离燃烧的大楼。
+chimney,烟囱 (n.),Smoke rose from the brick chimney.,烟从砖砌烟囱升起。
+collar,衣领 (n.),He straightened his shirt collar nervously.,他紧张地整理衬衫领子。
+plea,恳求 (n.),Her plea for help went unanswered.,她的求助恳求无人回应。
+Shakespeare,莎士比亚 (n.),Shakespeare's plays are timeless classics.,莎士比亚的戏剧是永恒经典。
+quote,引用 (v.),He likes to quote famous philosophers.,他喜欢引用著名哲学家的话。
+borrow,借 (v.),Can I borrow your pen for a moment?,我能借你的笔用一下吗？
+explanation,解释 (n.),Her explanation cleared up the confusion.,她的解释消除了困惑。
+jewel,宝石 (n.),The crown was set with rare jewels.,王冠上镶嵌着稀有宝石。
+thief,小偷 (n.),The thief was caught on camera.,小偷被摄像头拍到了。
+twentieth,第二十 (adj.),This is his twentieth birthday celebration.,这是他第二十个生日庆祝。
+highway,高速公路 (n.),We drove fast on the empty highway.,我们在空旷高速上开得很快。
+dispatch,派遣 (v.),They'll dispatch a team immediately.,他们将立即派遣一个小组。
+mechanics,力学 (n.),Physics students study mechanics deeply.,物理学生深入学习力学。
+faithful,忠诚的 (adj.),His dog remained faithful until the end.,他的狗始终忠诚如一。
+plastic,塑料 (n.),Avoid using single-use plastic items.,避免使用一次性塑料制品。
+alert,警觉的 (adj.),Stay alert in unfamiliar areas.,在陌生区域保持警觉。
+clothes,衣服 (n.),She donated her old clothes to charity.,她把旧衣服捐给了慈善机构。
+shut,关闭 (v.),Please shut the door quietly.,请轻声关上门。
+cacti,仙人掌 (n.),Cacti thrive in arid desert conditions.,仙人掌在干旱沙漠环境中茁壮成长。
+exceptionally,异常地 (adv.),She performed exceptionally well today.,她今天表现得异常出色。
+kettle,水壶 (n.),The kettle whistled when water boiled.,水烧开时水壶发出鸣声。
+laundry,洗衣 (n.),I need to do laundry this afternoon.,今天下午我得洗衣服。
+cash,现金 (n.),He paid for the meal in cash.,他用现金支付了餐费。
+electrical,电的 (adj.),Check the electrical wiring regularly.,定期检查电线线路。
+reply,回复 (v.),She didn't reply to my message yet.,她还没回复我的消息。
+thrust,猛推 (v.),He thrust the documents into my hands.,他把文件猛推到我手里。
+color,颜色 (n.),What's your favorite color for walls?,你最喜欢什么墙面颜色？
+couch,沙发 (n.),We relaxed on the comfortable couch.,我们在舒适沙发上放松休息。
+convert,v. 转换,He decided to convert his garage into a home office.,他决定把车库改造成家庭办公室。
+startle,v. 使吃惊,The loud noise startled the sleeping cat.,巨大的声响惊醒了睡着的猫。
+whereby,adv. 凭借,They devised a plan whereby everyone could participate.,他们想出了一个让所有人都能参与的计划。
+tax,n. 税,High income tax can discourage hard work.,高收入税可能打击工作积极性。
+athletes,n. 运动员,Professional athletes train rigorously every day.,职业运动员每天进行严格训练。
+curb,v. 抑制,We must curb our spending to save money.,我们必须控制开支来省钱。
+patterns,n. 模式,Weather patterns are changing due to global warming.,由于全球变暖，天气模式正在改变。
+mythical,adj. 神话的,Dragons are mythical creatures in many cultures.,龙是许多文化中的神话生物。
+dragon,n. 龙,The dragon in the story breathed fire.,故事中的龙会喷火。
+affiliate,v. 附属,She decided to affiliate with a larger organization.,她决定加入一个更大的组织。
+scheme,n. 计划,The government launched a new housing scheme.,政府启动了一项新的住房计划。
+fashionable,adj. 时尚的,Wearing vintage clothes is fashionable now.,现在穿复古衣服很时髦。
+plough,v. 犁地,Farmers plough the fields in spring.,农民在春天犁地。
+businesses,n. 企业,Small businesses often struggle with competition.,小企业常常在竞争中挣扎。
+alliance,n. 联盟,The two companies formed a strategic alliance.,两家公司结成了战略联盟。
+thumb,n. 拇指,She hurt her thumb while gardening.,她在园艺时弄伤了拇指。
+murder,n. 谋杀,The detective solved the murder case quickly.,侦探迅速破解了谋杀案。
+circus,n. 马戏团,The circus performance amazed the children.,马戏团的表演让孩子们惊叹。
+exhibition,n. 展览,We visited an art exhibition last weekend.,我们上周末参观了一个艺术展。
+powder,n. 粉末,She added baking powder to the cake mix.,她在蛋糕混合物里加了发酵粉。
+fluid,n. 流体,Water is a common fluid we use daily.,水是我们日常使用的常见流体。
+skater,n. 滑冰者,The skater glided gracefully on the ice.,滑冰者在冰上优雅地滑行。
+crops,n. 庄稼,Heavy rain damaged the crops in the field.,大雨毁坏了田里的庄稼。
+injury,n. 伤害,He suffered a minor injury during the game.,他在比赛中受了轻伤。
+host,n. 主人,The host welcomed all the guests warmly.,主人热情地欢迎所有客人。
+brute,n. 野兽,The brute force of the storm was terrifying.,风暴的蛮力令人恐惧。
+admire,v. 钦佩,I admire her dedication to charity work.,我钦佩她对慈善工作的奉献。
+hare,n. 野兔,The hare dashed across the field swiftly.,野兔迅速穿过田野。
+shutter,n. 百叶窗,She closed the shutter to block the sun.,她关上百叶窗遮挡阳光。
+buzz,n. 嗡嗡声,The buzz of bees filled the garden.,蜜蜂的嗡嗡声充满了花园。
+disappoint,v. 使失望,The movie's ending disappointed many fans.,电影的结局让许多粉丝失望。
+broken,adj. 破碎的,The broken vase lay on the floor.,破碎的花瓶躺在地板上。
+throbbing,adj. 抽痛的,His head was throbbing after the long day.,漫长的一天后，他的头抽痛着。
+vein,n. 静脉,The nurse found a vein for the injection.,护士找到了注射的静脉。
+severe,adj. 严重的,The storm caused severe damage to the coast.,风暴对海岸造成了严重破坏。
+signal,n. 信号,The traffic signal turned red suddenly.,交通信号灯突然变红了。
+spiritual,adj. 精神的,Yoga helps with spiritual growth and peace.,瑜伽有助于精神成长和宁静。
+artistic,adj. 艺术的,She has an artistic talent for painting.,她有绘画的艺术天赋。
+temperament,n. 性情,His calm temperament helps in stressful situations.,他冷静的性情在压力情况下很有帮助。
+baking,n. 烘焙,Baking bread at home is a relaxing hobby.,在家烘焙面包是一种放松的爱好。
+recipe,n. 食谱,This recipe yields the most delicious chocolate cake.,这个食谱能做出最美味的巧克力蛋糕。
+postman,n. 邮递员,The postman delivers mail regardless of the weather.,邮递员风雨无阻地投递邮件。
+fork,n. 叉子,She used a fork to eat her salad.,她用叉子吃沙拉。
+treatment,n. 治疗,The new treatment has shown promising results.,新疗法已显示出良好效果。
+liberation,n. 解放,The liberation brought freedom to the oppressed.,解放给受压迫者带来了自由。
+summit,n. 顶峰,They reached the summit after a grueling climb.,经过艰苦攀登，他们到达了顶峰。
+astronaut,n. 宇航员,The astronaut conducted experiments in space.,宇航员在太空中进行实验。
+fulfil,v. 实现,She worked hard to fulfil her dream.,她努力工作以实现梦想。
+facial,adj. 面部的,She had a facial to improve her skin.,她做了面部护理以改善皮肤。
+recognition,n. 认可,His talent earned him widespread recognition.,他的才华赢得了广泛认可。
+tangle,v. 纠缠,The wires tangle easily if not organized.,如果不整理，电线容易纠缠。
+subscribe,v. 订阅,I subscribe to several online magazines.,我订阅了几本在线杂志。
+graph,n. 图表,The graph illustrates the sales growth.,图表展示了销售增长情况。
+wires,n. 电线,The wires were neatly bundled together.,电线被整齐地捆在一起。
+fund,n. 资金,They raised a fund for the new project.,他们为新项目筹集了资金。
+burners,n. 燃烧器,The stove has four high-powered burners.,这个炉子有四个高功率燃烧器。
+grief,n. 悲伤,She felt immense grief after the loss.,失去后她感到深深的悲伤。
+organization,n. 组织,The organization focuses on environmental issues.,该组织专注于环境问题。
+balloon,n. 气球,The child released the balloon into the sky.,孩子把气球放飞到空中。
+detective,n. 侦探,The detective solved the mysterious case.,侦探破解了这起神秘案件。
+voice,n. 声音,Her voice was calm and reassuring.,她的声音平静而令人安心。
+accuracy,n. 准确性,The test requires high accuracy in measurements.,测试要求测量高度准确。
+X-ray,n. X光,The doctor ordered an X-ray for his chest.,医生为他安排了胸部X光检查。
+direction,n. 方向,He pointed in the wrong direction.,他指错了方向。
+quantitative,adj. 定量的,The study used quantitative data for analysis.,研究使用定量数据进行分析。
+resource,n. 资源,Water is a precious resource in deserts.,水在沙漠中是宝贵资源。
+dot,n. 点,She put a red dot on the map.,她在地图上标了一个红点。
+timely,adj. 及时的,His timely intervention prevented a disaster.,他的及时干预避免了一场灾难。
+recently,adv. 最近,I recently started learning a new language.,我最近开始学习一门新语言。
+traffic,n. 交通,The traffic was heavy during rush hour.,高峰时段交通很拥堵。
+investment,n. 投资,The investment yielded high returns.,这项投资带来了高回报。
+assess,v. 评估,We need to assess the risks before proceeding.,我们需要在继续前评估风险。
+various,adj. 各种各样的,She tried various methods to solve the problem.,她尝试了各种方法解决问题。
+worse,adj. 更糟的,The weather got worse as the day went on.,天气随着时间推移变得更糟。
+pond,n. 池塘,Ducks swim in the small pond.,鸭子在池塘里游泳。
+goose,n. 鹅,The goose honked loudly in the yard.,鹅在院子里大声叫。
+shuttle,n. 穿梭,The airport shuttle runs every hour.,机场穿梭巴士每小时一班。
+roughly,adv. 大约,The project will take roughly two months.,这个项目大约需要两个月。
+prefer,v. 更喜欢,I prefer coffee over tea in the morning.,我早上更喜欢咖啡而不是茶。
+launch,v. 发射,They plan to launch the satellite next week.,他们计划下周发射卫星。
+favourable,adj. 有利的,The weather forecast looks favourable for our picnic tomorrow.,天气预报看起来对我们明天的野餐很有利。
+shaving,n. 刮胡子,He cut himself while shaving this morning.,他今天早上刮胡子时割伤了自己。
+imitate,v. 模仿,Children often imitate their parents' behavior unconsciously.,孩子们常常无意识地模仿父母的行为。
+radiation,n. 辐射,Excessive exposure to ultraviolet radiation can harm the skin.,过度暴露于紫外线辐射会伤害皮肤。
+radioactivity,n. 放射性,The radioactivity levels in the area have decreased significantly.,该地区的放射性水平已显著下降。
+offer,v. 提供,She offered to help me with my homework after class.,她主动提出课后帮我做作业。
+tame,adj. 驯服的,The once wild horse is now tame and gentle.,那匹曾经野性的马现在变得温顺。
+wine,n. 葡萄酒,We enjoyed a glass of red wine with dinner.,我们晚餐时享用了一杯红葡萄酒。
+tactics,n. 策略,Their marketing tactics boosted sales dramatically.,他们的营销策略大幅提升了销售额。
+export,v. 出口,The company plans to export its products to Europe next year.,公司计划明年将其产品出口到欧洲。
+output,n. 输出,The factory's daily output has increased by 20%.,工厂的日产量增加了20%。
+frequent,adj. 频繁的,She makes frequent trips to the library for research.,她频繁去图书馆做研究。
+evaluate,v. 评估,Teachers need to evaluate students' progress regularly.,教师需要定期评估学生的进步。
+judges,n. 法官（复数）,The judges unanimously agreed on the verdict.,法官们一致同意了判决。
+president,n. 总统,The president addressed the nation in a televised speech.,总统在电视讲话中向全国发表演说。
+rope,n. 绳子,They used a strong rope to secure the boat to the dock.,他们用一根结实的绳子把船系在码头上。
+stamp,n. 邮票,I need to buy a stamp to mail this letter.,我需要买张邮票来寄这封信。
+neglect,v. 忽视,Don't neglect your health while pursuing career success.,在追求事业成功时不要忽视健康。
+net,n. 网,The fishermen cast their net into the sea at dawn.,渔民们在黎明时将网撒入海中。
+ball,n. 球,The children kicked the ball around in the park.,孩子们在公园里踢球玩。
+throne,n. 王座,The king sat solemnly on his golden throne.,国王庄严地坐在他的金色王座上。
+comprehensive,adj. 全面的,The report provides a comprehensive analysis of the issue.,这份报告对问题进行了全面分析。
+tell,v. 告诉,Can you tell me the way to the nearest subway station?,你能告诉我去最近的地铁站怎么走吗？
+box,n. 盒子,She keeps her jewelry in a small wooden box.,她把珠宝放在一个小木盒里。
+hide,v. 隐藏,The cat likes to hide under the bed when scared.,猫害怕时喜欢躲在床底下。
+photograph,n. 照片,This old photograph brings back many memories.,这张旧照片唤起了许多回忆。
+authorize,v. 授权,The manager must authorize any major expenses.,任何大额开支都必须由经理授权。
+donate,v. 捐赠,Many people donate money to charity during the holidays.,许多人在节假日期间向慈善机构捐款。
+achieve,v. 实现,With hard work,"you can achieve your goals., 通过努力，你可以实现自己的目标。"
+Olympic,adj. 奥林匹克的,She won a gold medal in the Olympic Games last year.,她在去年的奥运会上赢得了一枚金牌。
+hell,n. 地狱,The war turned the city into a living hell.,战争把这座城市变成了活地狱。
+damn,interj. 该死,Damn! I forgot to bring my keys again.,该死！我又忘记带钥匙了。
+erosion,n. 侵蚀,Soil erosion is a serious problem in this region.,土壤侵蚀是这个地区的一个严重问题。
+intersection,n. 十字路口,There was a minor accident at the busy intersection.,在繁忙的十字路口发生了一起小事故。
+spaceship,n. 宇宙飞船,The spaceship is scheduled to launch next month.,这艘宇宙飞船计划于下个月发射。
+scissors,n. 剪刀,Can you pass me the scissors to cut this paper?,你能把剪刀递给我剪这张纸吗？
+majesty,n. 陛下,Your Majesty,"the guests have arrived., 陛下，客人们已经到了。"
+sort,n. 种类,What sort of music do you enjoy listening to?,你喜欢听哪种音乐？
+poll,n. 投票,The latest poll shows the candidate leading by 10 points.,最新投票显示该候选人领先10个百分点。
+newly,adv. 新近地,They moved into their newly purchased apartment last week.,他们上周搬进了新买的公寓。
+downward,adj. 向下的,The stock market took a downward trend this quarter.,本季度股市呈下降趋势。
+exercise,v. 锻炼,She exercises daily to maintain her fitness.,她每天锻炼以保持健康。
+married,adj. 已婚的,They got married last summer in a small ceremony.,他们去年夏天简单举行了婚礼。
+agreement,n. 协议,We reached an agreement after lengthy negotiations.,经过漫长谈判，我们达成了协议。
+king,n. 国王,The king addressed the nation on television.,国王在电视上向全国发表讲话。
+promise,v. 承诺,He promised to finish the project by Friday.,他承诺周五前完成项目。
+desire,n. 渴望,Her desire for knowledge drives her to read widely.,对知识的渴望促使她广泛阅读。
+comprise,v. 包含,The team comprises experts from various fields.,团队由各领域专家组成。
+even,adv. 甚至,She didn't even notice the time passing.,她甚至没注意到时间流逝。
+rotate,v. 旋转,The Earth rotates on its axis every 24 hours.,地球每24小时绕轴旋转一次。
+sprained,adj. 扭伤的,He sprained his ankle while playing soccer.,他踢足球时扭伤了脚踝。
+ankle,n. 脚踝,She wrapped a bandage around her swollen ankle.,她在肿胀的脚踝上缠了绷带。
+conspicuous,adj. 显眼的,His bright red jacket was conspicuous in the crowd.,他鲜红的夹克在人群中很显眼。
+shear,v. 剪断,They shear the sheep's wool every spring.,他们每年春天剪羊毛。
+claim,v. 声称,He claimed to have seen a UFO last night.,他声称昨晚看到了不明飞行物。
+visa,n. 签证,She applied for a student visa to study abroad.,她申请了学生签证去国外留学。
+reject,v. 拒绝,The committee rejected his proposal unanimously.,委员会一致拒绝了他的提议。
+propose,v. 提议,I propose we take a short break now.,我提议我们现在休息一下。
+emotional,adj. 情感的,The movie's ending was highly emotional.,电影的结局非常感人。
+table,n. 桌子,They gathered around the table for dinner.,他们围坐在桌旁吃晚餐。
+rowing,n. 划船,Rowing on the lake is her favorite weekend activity.,在湖上划船是她最爱的周末活动。
+tradition,n. 传统,It's a family tradition to celebrate holidays together.,一起庆祝节日是家庭传统。
+ensuring,v. 确保,We're ensuring all safety measures are in place.,我们正确保所有安全措施到位。
+escort,v. 护送,Security will escort you to the venue.,保安将护送你到会场。
+commit,v. 承诺做,She committed to volunteering every weekend.,她承诺每周末做志愿者。
+plagiarism,n. 抄袭,Plagiarism is strictly prohibited in academic work.,学术工作中严禁抄袭。
+mines,n. 矿山,The old mines have been closed for safety reasons.,旧矿山因安全原因已关闭。
+planets,n. 行星,Scientists discovered new planets in distant galaxies.,科学家在遥远星系发现了新行星。
+solar,adj. 太阳的,Solar energy is a renewable resource.,太阳能是可再生资源。
+impair,v. 损害,Lack of sleep can impair cognitive function.,睡眠不足会损害认知功能。
+cynical,adj. 愤世嫉俗的,He has a cynical view of politics.,他对政治持愤世嫉俗的看法。
+dig,v. 挖掘,Archaeologists dig for ancient artifacts.,考古学家挖掘古代文物。
+carbon,n. 碳,Carbon emissions contribute to climate change.,碳排放导致气候变化。
+coal,n. 煤,Coal mining was once a major industry here.,采煤曾是这里的主要产业。
+proximity,n. 接近,The hotel's proximity to the beach is a plus.,酒店靠近海滩是个优点。
+glorious,adj. 辉煌的,We witnessed a glorious sunset over the ocean.,我们目睹了海上辉煌的日落。
+kit,n. 工具包,He keeps a first-aid kit in his car.,他在车里备有急救包。
+spear,n. 矛,The museum displayed an ancient hunting spear.,博物馆展出了一把古代狩猎矛。
+lieutenant,n. 中尉,The lieutenant led the troops into battle.,中尉率领部队投入战斗。
+badges,n. 徽章,The scouts earned badges for their achievements.,童子军因成就获得了徽章。
+budget,n. 预算,We need to stick to our budget this month.,这个月我们必须坚持预算。
+entry,n. 进入,Her entry into the room silenced everyone.,她一进房间，大家都安静了。
+premature,adj. 过早的,His premature departure surprised us all.,他过早离开让我们都很惊讶。
+national,adj. 国家的,The national park attracts millions of visitors.,这个国家公园吸引了数百万游客。
+speed,n. 速度,We drove at a high speed on the highway.,我们在高速公路上开得很快。
+alphabet,n. 字母表,Children learn the alphabet in kindergarten.,孩子们在幼儿园学习字母表。
+cake,n. 蛋糕,She baked a delicious chocolate cake.,她烤了一个美味的巧克力蛋糕。
+bank,n. 银行,I need to deposit money at the bank.,我需要去银行存钱。
+transfer,v. 转移,He will transfer to a new department soon.,他很快会调到新部门。
+outlook,n. 观点,Her positive outlook inspires everyone.,她积极的观点激励着每个人。
+incubator,n. 孵化器,The startup uses an incubator for growth.,这家初创公司用孵化器来发展。
+scallion,n. 青葱,Add some chopped scallion for flavor.,加点切碎的青葱提味。
+hollow,adj. 空心的,The hollow tree trunk echoed our voices.,空心的树干回荡着我们的声音。
+conform,v. 符合,Employees must conform to company rules.,员工必须遵守公司规定。
+renew,v. 更新,I need to renew my passport next month.,我下个月需要更新护照。
+add,v. 添加,Please add more details to your report.,请在你的报告中添加更多细节。
+colleagues,n. 同事,My colleagues are very supportive at work.,我的同事在工作中很支持我。
+spur,v. 激励,Success can spur further achievements.,成功可以激励更多成就。
+distinction,n. 区别,There's a clear distinction between them.,它们之间有明显的区别。
+property,n. 财产,He inherited property from his family.,他从家族继承了财产。
+mile,n. 英里,We walked a mile in the park today.,我们今天在公园走了一英里。
+master,v. 掌握,She aims to master the new language.,她目标是掌握这门新语言。
+rose,n. 玫瑰,He gave her a red rose for Valentine's.,他情人节送了她一朵红玫瑰。
+accessory,n. 配件,This bag comes with matching accessories.,这个包配有相配的配件。
+Italian,adj. 意大利的,We had Italian food for dinner.,我们晚餐吃了意大利菜。
+angry,adj. 生气的,She was angry about the delay.,她对延误很生气。
+moisture,n. 水分,The soil lacks moisture in dry weather.,干燥天气里土壤缺乏水分。
+cream,n. 奶油,I prefer cream in my coffee.,我喜欢咖啡里加奶油。
+hardware,n. 硬件,The store sells computer hardware parts.,这家店卖电脑硬件零件。
+disagree,v. 不同意,I disagree with his opinion on this.,我不同意他对此事的看法。
+favourite,adj. 最喜欢的,Pizza is my favourite food.,披萨是我最喜欢的食物。
+drawer,n. 抽屉,I keep my socks in the top drawer.,我把袜子放在最上面的抽屉。
+eel,n. 鳗鱼,Grilled eel is a delicacy in Japan.,烤鳗鱼是日本的一道美食。
+current,adj. 当前的,The current situation requires attention.,当前情况需要关注。
+discharge,v. 排放,Factories must not discharge waste illegally.,工厂不得非法排放废物。
+gathering,n. 聚会,We're having a small gathering tonight.,我们今晚有个小型聚会。
+public,adj. 公共的,The public library is free for all.,公共图书馆对所有人免费。
+identity,n. 身份,She hid her identity for safety.,她为安全隐藏了身份。
+true,adj. 真实的,His story turned out to be true.,他的故事原来是真实的。
+beard,n. 胡须,He grew a beard during the trip.,他在旅行期间留了胡须。
+masculine,adj. 男性的,His deep voice is considered very masculine.,他低沉的嗓音被认为很有男子气概。
+blew,v. 吹,The wind blew the leaves across the yard.,风吹得树叶在院子里飞舞。
+board,n. 板,She wrote the plan on the whiteboard.,她在白板上写下了计划。
+breeze,n. 微风,A cool breeze made the evening pleasant.,凉爽的微风让夜晚很惬意。
+final,adj. 最终的,This is my final decision on the matter.,这是我对此事的最终决定。
+chairman,n. 主席,The chairman called the meeting to order.,主席宣布会议开始。
+overlap,v. 重叠,Our schedules overlap this afternoon.,我们的日程今天下午有重叠。
+cap,n. 帽子,He wore a baseball cap to the game.,他戴了顶棒球帽去看比赛。
+collection,n. 收藏,Her coin collection is quite valuable.,她的硬币收藏很有价值。
+bicycle,n. 自行车,I ride my bicycle to work daily.,我每天骑自行车上班。
+frequently,adv. 频繁地,She frequently visits her grandparents.,她经常去看望祖父母。
+episode,n. 集,That episode of the show was thrilling.,那集节目很刺激。
+separated,adj. 分开的,They live in separated apartments now.,他们现在住在分开的公寓里。
+modify,v. 修改,We need to modify the original plan.,我们需要修改原计划。
+adverb,n. 副词,"""Quickly"" is an adverb in this sentence.","""Quickly""在这个句子里是副词。"
+accomplish,v. 完成,We can accomplish this task together.,我们可以一起完成这个任务。
+encounter,v. 遇到,I often encounter old friends in town.,我常在镇上遇到老朋友。
+shilling,n. 先令,In the past,"a shilling was British currency., 过去先令是英国货币。"
+pound,n. 英镑,It costs ten pounds to enter the museum.,进博物馆要花十英镑。
+dash,v. 猛冲,He had to dash to catch the bus.,他得猛冲去赶公交车。
+emerge,v. 出现,The sun emerged from behind the clouds.,太阳从云后露了出来。
+cathedral,n. 大教堂,We visited the historic cathedral downtown.,我们参观了市区的历史大教堂。
+intentional,adj. 故意的,His mistake was not intentional.,他的错误不是故意的。
+partition,n. 隔断,A partition divides the office space.,隔断分隔了办公区域。
+puff,n. 一阵,A puff of wind scattered the papers.,一阵风吹散了文件。
+sweat,n. 汗,After the run,"he was covered in sweat., 跑步后他浑身是汗。"
+smooth,adj. 平滑的,The road is very smooth to drive on.,这条路开车很平稳。
+acceleration,n. 加速,The car's acceleration impressed everyone.,汽车的加速让人印象深刻。
+grocery,n. 食品杂货,I bought milk at the grocery store.,我在杂货店买了牛奶。
+store,n. 商店,She works at a clothing store part-time.,她在服装店兼职工作。
+shatter,v. 粉碎,The glass will shatter if dropped.,玻璃掉下来会粉碎。
+steady,adj. 稳定的,Keep a steady hand while painting.,画画时手要稳。
+expansion,n. 扩张,The company's expansion created new jobs.,公司的扩张创造了新工作。
+complicate,v. 使复杂化,Don't complicate things with extra rules.,别用额外规则把事情搞复杂。
+destiny,n. 命运,He believes in shaping his own destiny.,他相信能塑造自己的命运。
+applauding,v. 鼓掌,The audience was applauding loudly.,观众在大声鼓掌。
+certificate,n. 证书,She earned a certificate in coding.,她获得了编程证书。
+green,adj. 绿色的,The leaves turn green in spring.,树叶在春天变绿。
+elevate,v. 提升,Reading can elevate your knowledge.,阅读能提升你的知识。
+justify,v. 证明合理,Can you justify your decision?,你能证明你的决定合理吗？
+quantities,n. 数量,We need large quantities of fresh produce daily.,我们每天需要大量新鲜农产品。
+bulk,n. 大部分,The bulk of the work is already completed.,大部分工作已经完成。
+razor,n. 剃须刀,He shaves with an electric razor every morning.,他每天早上用电剃须刀刮胡子。
+electric,adj. 电动的,She drives an electric car to reduce emissions.,她开电动车以减少排放。
+matters,v. 要紧,What matters most is your health and happiness.,最重要的是你的健康和快乐。
+trail,n. 小径,We hiked along a scenic mountain trail yesterday.,我们昨天沿着风景优美的山间小径徒步。
+cyclist,n. 骑自行车的人,The cyclist sped past us on the country road.,骑自行车的人在乡间小路上从我们身边飞驰而过。
+aid,n. 援助,International aid helped rebuild the disaster-stricken area.,国际援助帮助重建了灾区。
+worship,v. 崇拜,Many people worship celebrities as their idols.,许多人崇拜名人作为偶像。
+god,n. 神,In ancient myths,"gods often intervened in human affairs., 在古代神话中，神常常干预人间事务。"
+youngster,n. 年轻人,The youngster showed great talent in playing the piano.,这个年轻人在弹钢琴方面展现了巨大天赋。
+unsatisfactory,adj. 不满意的,The test results were unsatisfactory and need improvement.,测试结果不满意，需要改进。
+intervene,v. 干预,Parents should intervene when children argue excessively.,当孩子们争吵过度时，父母应该干预。
+prince,n. 王子,The prince will inherit the throne one day.,王子有一天会继承王位。
+evaporate,v. 蒸发,Water evaporates quickly under the hot sun.,水在烈日下迅速蒸发。
+cautiously,adv. 谨慎地,She walked cautiously on the icy sidewalk.,她在结冰的人行道上谨慎行走。
+index,n. 索引,Check the book's index to find specific topics.,查看书的索引以找到特定主题。
+crutches,n. 拐杖,After the injury,"he relied on crutches to move around., 受伤后，他依靠拐杖行动。"
+able,adj. 能够的,She is able to solve complex problems efficiently.,她能够高效解决复杂问题。
+slip,v. 滑倒,Be careful not to slip on the wet floor.,小心别在湿地上滑倒。
+instructor,n. 教练,The yoga instructor guided us through the poses.,瑜伽教练指导我们完成体式。
+pistol,n. 手枪,The officer drew his pistol in self-defense.,警官自卫拔出了手枪。
+shoot,v. 射击,He learned to shoot accurately at the range.,他在靶场学会了精准射击。
+photographic,adj. 摄影的,She has a photographic memory for details.,她对细节有摄影般的记忆力。
+normally,adv. 通常,I normally have coffee after breakfast.,我通常在早餐后喝咖啡。
+pot,n. 锅,She boiled water in a large pot for pasta.,她用大锅烧水煮意大利面。
+attractions,n. 景点,The city's main attractions draw millions of tourists.,这座城市的主要景点吸引了数百万游客。
+criminal,n. 罪犯,The criminal was sentenced to ten years in prison.,罪犯被判处十年监禁。
+France,n. 法国,France is famous for its wine and cuisine.,法国以其葡萄酒和美食闻名。
+nickel,n. 镍,Nickel is used in making stainless steel alloys.,镍用于制造不锈钢合金。
+emphasis,n. 强调,The teacher placed emphasis on critical thinking skills.,老师强调批判性思维技能。
+finish,v. 完成,Let's finish this project by Friday.,让我们在周五前完成这个项目。
+attempt,n. 尝试,His first attempt at baking a cake failed.,他第一次尝试烤蛋糕失败了。
+exist,v. 存在,Many species exist only in remote areas.,许多物种只存在于偏远地区。
+robust,adj. 强健的,He maintains a robust physique through exercise.,他通过锻炼保持强健的体魄。
+kill,v. 杀死,Pollution can kill marine life rapidly.,污染能迅速杀死海洋生物。
+compete,v. 竞争,Athletes from many countries compete in the Olympics.,许多国家的运动员在奥运会上竞争。
+murmur,v. 低语,They murmured secrets to each other in the dark.,他们在黑暗中互相低语秘密。
+fertile,adj. 肥沃的,The fertile soil yields abundant crops each year.,肥沃的土壤每年产出丰富的作物。
+cup,n. 杯子,She sipped tea from a delicate porcelain cup.,她从精致的瓷杯中啜饮茶。
