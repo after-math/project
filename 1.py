@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import os
 
+st.image("微信图片_20251019001113_188.jpg", caption="bb", use_column_width=True)
+
 # ==================== 文件路径 ====================
 WORDS_FILE = "sentences.csv"
 LEARNED_FILE = "learned.txt"
