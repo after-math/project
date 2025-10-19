@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pymysql
+import os
 
 # ==================== 页面配置 ====================
 st.set_page_config(page_title="智能英语默写系统——程嘉明", page_icon="📘", layout="centered")
@@ -8,7 +9,6 @@ st.image("微信图片_20251019001113_188.jpg", caption="智能英语默写系�
 
 # ==================== 数据库连接 ====================
 def get_conn():
-    # 每次调用创建新连接，防止缓存冲突或回滚失败
     return pymysql.connect(
         host="rm-wz97z0ykk16h460i9to.mysql.rds.aliyuncs.com",
         user="streamlit",
@@ -31,16 +31,17 @@ if "favorites" not in st.session_state:
     st.session_state.favorites = set()
 if "history" not in st.session_state:
     st.session_state.history = []
+if "clear_input" not in st.session_state:
+    st.session_state.clear_input = False
 
 # ==================== 分批加载函数 ====================
 @st.cache_data(show_spinner=False)
 def load_words_batch(batch_index: int):
-    """分页加载一批单词"""
     offset = batch_index * BATCH_SIZE
     sql = f"""
-        SELECT word, meaning, sentence, translation
+        SELECT id, word, meaning, sentence, translation
         FROM words
-        ORDER BY word ASC
+        ORDER BY id ASC
         LIMIT {BATCH_SIZE} OFFSET {offset}
     """
     conn = get_conn()
@@ -50,14 +51,7 @@ def load_words_batch(batch_index: int):
         conn.close()
     return df
 
-# 加载当前批次单词
 words = load_words_batch(st.session_state.batch)
-
-# 尝试预加载下一批（若失败则忽略）
-try:
-    _ = load_words_batch(st.session_state.batch + 1)
-except Exception:
-    pass
 
 # ==================== 加载学习与收藏状态 ====================
 @st.cache_data(ttl=60)
@@ -75,14 +69,25 @@ def load_status():
 
 st.session_state.learned, st.session_state.favorites = load_status()
 
-# ==================== 判断是否学完当前批次 ====================
-if st.session_state.index >= len(words):
-    st.session_state.batch += 1
-    st.session_state.index = 0
-    words = load_words_batch(st.session_state.batch)
-    if words.empty:
-        st.success("🎉 所有单词都已掌握！")
-        st.stop()
+# ==================== 自动跳过已学单词 ====================
+def skip_learned():
+    while True:
+        words = load_words_batch(st.session_state.batch)
+        if st.session_state.index >= len(words):
+            st.session_state.batch += 1
+            st.session_state.index = 0
+            if words.empty:
+                st.success("🎉 所有单词都已掌握！")
+                st.stop()
+        else:
+            current_word = str(words.iloc[st.session_state.index]["word"]).lower()
+            if current_word in st.session_state.learned:
+                st.session_state.index += 1
+            else:
+                break
+    return load_words_batch(st.session_state.batch)
+
+words = skip_learned()
 
 # ==================== 当前单词 ====================
 current = words.iloc[st.session_state.index]
@@ -107,12 +112,35 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ==================== 数据库操作函数 ====================
-def add_learned(word):
+# ==================== 数据库操作函数 + 文件同步 ====================
+
+def add_learned(word, meaning, sentence, translation):
+    """✅ 完整写入数据库 + learned.txt（保持原格式）"""
     conn = get_conn()
     try:
         with conn.cursor() as cur:
-            cur.execute("INSERT IGNORE INTO learned (word) VALUES (%s)", (word,))
+            cur.execute(
+                """
+                INSERT INTO learned (word, meaning, sentence, translation)
+                VALUES (%s, %s, %s, %s)
+                ON DUPLICATE KEY UPDATE
+                    meaning = VALUES(meaning),
+                    sentence = VALUES(sentence),
+                    translation = VALUES(translation)
+                """,
+                (word, meaning, sentence, translation)
+            )
+        # 同步写入 learned.txt（防止重复）
+        exists = False
+        if os.path.exists("learned.txt"):
+            with open("learned.txt", "r", encoding="utf-8") as f:
+                for line in f:
+                    if line.lower().startswith(word.lower() + ","):
+                        exists = True
+                        break
+        if not exists:
+            with open("learned.txt", "a", encoding="utf-8") as f:
+                f.write(f"{word},{meaning},{sentence},{translation}\n")
     finally:
         conn.close()
 
@@ -121,9 +149,11 @@ def add_favorite(word, meaning, sentence, translation):
     try:
         with conn.cursor() as cur:
             cur.execute(
-                "INSERT IGNORE INTO favorites (word, meaning, sentence, translation) VALUES (%s, %s, %s, %s)",
+                "INSERT IGNORE INTO favorites (word, meaning, sentence, translation) VALUES (%s,%s,%s,%s)",
                 (word, meaning, sentence, translation)
             )
+        with open("favorites.txt", "a", encoding="utf-8") as f:
+            f.write(f"{word},{meaning},{sentence},{translation}\n")
     finally:
         conn.close()
 
@@ -132,17 +162,32 @@ def remove_favorite(word):
     try:
         with conn.cursor() as cur:
             cur.execute("DELETE FROM favorites WHERE word=%s", (word,))
+        if os.path.exists("favorites.txt"):
+            with open("favorites.txt", "r", encoding="utf-8") as f:
+                lines = f.readlines()
+            with open("favorites.txt", "w", encoding="utf-8") as f:
+                for line in lines:
+                    if not line.lower().startswith(word.lower() + ","):
+                        f.write(line)
     finally:
         conn.close()
+
+def add_progress(word):
+    with open("progress.txt", "a", encoding="utf-8") as f:
+        f.write(f"{word}\n")
 
 # ==================== 辅助函数 ====================
 def find_next_unlearned(start_idx: int) -> int:
     i = start_idx + 1
-    while i < len(words) and str(words.iloc[i, 0]).lower() in st.session_state.learned:
+    while i < len(words) and str(words.iloc[i, 1]).lower() in st.session_state.learned:
         i += 1
     return i
 
 # ==================== 表单交互 ====================
+if st.session_state.clear_input:
+    st.session_state.user_input = ""
+    st.session_state.clear_input = False
+
 with st.form("answer_form"):
     user_input = st.text_input("✏️ 请写出对应的英文单词：", key="user_input", label_visibility="collapsed")
 
@@ -155,32 +200,30 @@ with st.form("answer_form"):
         u = user_input.strip().lower()
         if u == word.lower():
             st.success(f"✅ 正确！{word}")
-            add_learned(word)
+            add_learned(word, meaning, sentence, translation)
+            add_progress(word)
             st.session_state.learned.add(word.lower())
             st.session_state.history.append(st.session_state.index)
+
+            # ✅ 清空输入框并跳转
             nxt = find_next_unlearned(st.session_state.index)
-            if nxt < len(words):
-                st.session_state.index = nxt
-                st.rerun()
-            else:
-                st.session_state.index = len(words)
-                st.rerun()
+            st.session_state.index = nxt if nxt < len(words) else len(words)
+            st.session_state.clear_input = True
+            st.rerun()
         else:
             st.error(f"❌ 错误，应为：{word}")
 
     elif next_btn:
         st.session_state.history.append(st.session_state.index)
         nxt = find_next_unlearned(st.session_state.index)
-        if nxt < len(words):
-            st.session_state.index = nxt
-            st.rerun()
-        else:
-            st.session_state.index = len(words)
-            st.rerun()
+        st.session_state.index = nxt if nxt < len(words) else len(words)
+        st.session_state.clear_input = True
+        st.rerun()
 
     elif prev_btn:
         if st.session_state.history:
             st.session_state.index = st.session_state.history.pop()
+            st.session_state.clear_input = True
             st.rerun()
         else:
             st.warning("🚫 没有更早的历史记录。")

@@ -1,1 +1,15 @@
 
+base
+ceremony
+bullet
+soldier
+soldier
+hunt
+sandy
+base
+ceremony
+basket
+soldier
+hunt,v. 搜寻,We need to hunt for the missing documents.,我们需要搜寻丢失的文件。
+base,n. 基地,The military base is off-limits to civilians.,军事基地禁止平民进入。
+soldier,n. 士兵,The soldier stood guard at the gate.,士兵在门口站岗守卫。
