@@ -5,7 +5,7 @@ import os
 
 # ==================== 页面配置 ====================
 st.set_page_config(page_title="智能英语默写系统——程嘉明", page_icon="📘", layout="centered")
-st.image("微信图片_20251019001113_188.jpg", caption="智能英语默写系统", use_column_width=True)
+#st.image("微信图片_20251019001113_188.jpg", caption="智能英语默写系统", use_column_width=True)
 
 # ==================== 数据库连接 ====================
 def get_conn():
@@ -97,7 +97,7 @@ sentence = str(current["sentence"])
 translation = str(current["translation"])
 
 # ==================== 页面标题 ====================
-st.markdown("<h1 style='text-align:center;'>📘 智能英语默写系统</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;'>📘 智能英语默写系统——程嘉明</h1>", unsafe_allow_html=True)
 st.subheader(f"📚 第 {st.session_state.batch + 1} 批 · 进度：{st.session_state.index + 1} / {len(words)}")
 
 # ==================== 中文释义 + 中文例句 ====================
