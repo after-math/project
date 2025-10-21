@@ -2,4 +2,3 @@ streamlit
 pandas
 pymysql
 gtts
-base64  
