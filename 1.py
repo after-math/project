@@ -2,10 +2,13 @@ import streamlit as st
 import pandas as pd
 import pymysql
 import os
+import asyncio
+import edge_tts
+import io
 
 # ==================== 页面配置 ====================
 st.set_page_config(page_title="智能英语默写系统——程嘉明", page_icon="📘", layout="centered")
-#st.image("微信图片_20251019001113_188.jpg", caption="智能英语默写系统", use_column_width=True)
+# st.image("微信图片_20251019001113_188.jpg", caption="智能英语默写系统", use_column_width=True)
 
 # ==================== 数据库连接 ====================
 def get_conn():
@@ -20,19 +23,12 @@ def get_conn():
 
 # ==================== 批次加载配置 ====================
 BATCH_SIZE = 200
-
-if "batch" not in st.session_state:
-    st.session_state.batch = 0
-if "index" not in st.session_state:
-    st.session_state.index = 0
-if "learned" not in st.session_state:
-    st.session_state.learned = set()
-if "favorites" not in st.session_state:
-    st.session_state.favorites = set()
-if "history" not in st.session_state:
-    st.session_state.history = []
-if "clear_input" not in st.session_state:
-    st.session_state.clear_input = False
+for key, value in {
+    "batch": 0, "index": 0, "learned": set(),
+    "favorites": set(), "history": [], "clear_input": False
+}.items():
+    if key not in st.session_state:
+        st.session_state[key] = value
 
 # ==================== 分批加载函数 ====================
 @st.cache_data(show_spinner=False)
@@ -104,18 +100,13 @@ st.subheader(f"📚 第 {st.session_state.batch + 1} 批 · 进度：{st.session
 st.markdown(
     f"""
     ### 📖 中文释义: {meaning}
-    <hr style='border: 2px solid #B22222; border-radius: 5px; margin-top: -10px; margin-bottom: 5px;'>
-    <div style='font-size:18px; color:#CCCCCC; margin-bottom:15px;'>
-        💬 <b>中文例句：</b>{translation}
-    </div>
+    ### 💬 例   句: {translation}
     """,
     unsafe_allow_html=True
 )
 
-# ==================== 数据库操作函数 + 文件同步 ====================
-
+# ==================== 数据库操作函数 ====================
 def add_learned(word, meaning, sentence, translation):
-    """✅ 完整写入数据库 + learned.txt（保持原格式）"""
     conn = get_conn()
     try:
         with conn.cursor() as cur:
@@ -130,7 +121,6 @@ def add_learned(word, meaning, sentence, translation):
                 """,
                 (word, meaning, sentence, translation)
             )
-        # 同步写入 learned.txt（防止重复）
         exists = False
         if os.path.exists("learned.txt"):
             with open("learned.txt", "r", encoding="utf-8") as f:
@@ -204,8 +194,6 @@ with st.form("answer_form"):
             add_progress(word)
             st.session_state.learned.add(word.lower())
             st.session_state.history.append(st.session_state.index)
-
-            # ✅ 清空输入框并跳转
             nxt = find_next_unlearned(st.session_state.index)
             st.session_state.index = nxt if nxt < len(words) else len(words)
             st.session_state.clear_input = True
@@ -230,7 +218,7 @@ with st.form("answer_form"):
 
 # ==================== 收藏 & 显示英文例句 ====================
 st.divider()
-col_fav, col_sen = st.columns([1, 1])
+col_fav, col_sen, col_play = st.columns([1, 1, 1])
 
 with col_fav:
     if word.lower() in st.session_state.favorites:
@@ -248,3 +236,41 @@ with col_fav:
 with col_sen:
     if st.button("📜 显示英文例句", use_container_width=True):
         st.info(f"**{sentence}**")
+
+# ==================== 语音播放功能 ====================
+with col_play:
+    if st.button("🔊 播放英文例句", use_container_width=True):
+        async def speak(sentence_text, selected_voice):
+            communicate = edge_tts.Communicate(sentence_text, selected_voice.split("（")[0])
+            mp3_fp = io.BytesIO()
+            async for chunk in communicate.stream():
+                if chunk["type"] == "audio":
+                    mp3_fp.write(chunk["data"])
+            mp3_fp.seek(0)
+            # 将音频转为 Base64 以嵌入 HTML 自动播放
+            import base64
+            audio_bytes = mp3_fp.getvalue()
+            audio_base64 = base64.b64encode(audio_bytes).decode()
+            audio_html = f"""
+                <audio autoplay="true" controls>
+                    <source src="data:audio/mp3;base64,{audio_base64}" type="audio/mp3">
+                </audio>
+                        """
+            st.markdown(audio_html, unsafe_allow_html=True)
+
+
+        asyncio.run(speak(sentence, st.session_state.get("voice", "en-US-JennyNeural（美式女声）")))
+        st.success("✅ 正在播放例句语音~")
+
+# ==================== 发音人选择 ====================
+st.markdown("### 🎙️ 语音设置")
+voice = st.selectbox(
+    "选择发音人：",
+    [
+        "en-US-JennyNeural（美式女声）",
+        "en-US-GuyNeural（美式男声）",
+        "en-GB-SoniaNeural（英式女声）",
+        "en-AU-NatashaNeural（澳洲女声）"
+    ],
+    key="voice"
+)
