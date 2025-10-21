@@ -1,3 +1,5 @@
 streamlit
 pandas
 pymysql
+asyncio
+edge_tts
